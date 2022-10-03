@@ -7,6 +7,15 @@ var velocity : Vector3 = Vector3()
 var jump_force : float = 40.0
 var gravity : float = 1.0
 
+# variables for animation
+var time : float = 0.0
+var step_frequency : float = 2.0
+var step_height : float = 0.2
+var step_tilt : float = 8.0
+
+# onready variables
+onready var body_hinge = $BodyHinge
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -16,6 +25,13 @@ func _ready():
 #	pass
 
 func _physics_process(delta):
+	# animation
+	var up_step : float = 1 + sin(2.0 * PI * step_frequency * time)
+	body_hinge.translation.y = step_height * up_step
+	var tilt : float = step_tilt * sin(PI * step_frequency * time)
+	body_hinge.rotation_degrees.z = tilt
+	time += delta
+	# movement
 	var sideways : int = 0
 	if Input.is_action_pressed("move_left"):
 		sideways = -1

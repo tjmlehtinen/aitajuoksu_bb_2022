@@ -1,0 +1,189 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/RoadBase.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Hurdle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/Tree_1.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://assets/Tree_2.obj" type="ArrayMesh" id=4]
+
+[node name="Road1" instance=ExtResource( 1 )]
+
+[node name="Hurdle" parent="Grass/Sand/Obstacles" index="0" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.554, 0.5, -11.809 )
+
+[node name="Hurdle2" parent="Grass/Sand/Obstacles" index="1" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.554, 0.5, 21.082 )
+
+[node name="Hurdle3" parent="Grass/Sand/Obstacles" index="2" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.385, 0.5, 4.286 )
+
+[node name="Tree_1" type="MeshInstance" parent="Grass/Trees" index="0"]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 8.35967, 0, 9.79716 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Tree_3" type="MeshInstance" parent="Grass/Trees" index="1"]
+transform = Transform( 0.97437, 0, 0.224951, 0, 1, 0, -0.224951, 0, 0.97437, 8.35967, 0, 0 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Tree_2" type="MeshInstance" parent="Grass/Trees" index="2"]
+transform = Transform( 0.438371, 0, 0.898794, 0, 1, 0, -0.898794, 0, 0.438371, 8.34373, 0, -13.5761 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
+material/35 = null
+material/36 = null
+material/37 = null
+material/38 = null
+material/39 = null
+material/40 = null
+material/41 = null
+
+[node name="Tree_4" type="MeshInstance" parent="Grass/Trees" index="3"]
+transform = Transform( -0.390731, 0, 0.920505, 0, 1, 0, -0.920505, 0, -0.390731, -9.851, 0, 0 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
+material/35 = null
+material/36 = null
+material/37 = null
+material/38 = null
+material/39 = null
+material/40 = null
+material/41 = null
+
+[node name="Tree_5" type="MeshInstance" parent="Grass/Trees" index="4"]
+transform = Transform( 0.838671, 0, 0.544639, 0, 1, 0, -0.544639, 0, 0.838671, -9.851, 0, 17.215 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
+material/35 = null
+material/36 = null
+material/37 = null
+material/38 = null
+material/39 = null
+material/40 = null
+material/41 = null

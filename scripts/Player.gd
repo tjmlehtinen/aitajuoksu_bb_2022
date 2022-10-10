@@ -43,3 +43,7 @@ func _physics_process(delta):
 	velocity.x = sideways * side_speed
 	velocity.y -= gravity
 	velocity = move_and_slide(velocity)
+	for index in range(get_slide_count()):
+		var collision = get_slide_collision(index)
+		var collision_object = collision.collider as CollisionObject
+		print(collision_object)

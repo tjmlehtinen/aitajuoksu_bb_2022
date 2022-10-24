@@ -46,4 +46,5 @@ func _physics_process(delta):
 	for index in range(get_slide_count()):
 		var collision = get_slide_collision(index)
 		var collision_object = collision.collider as CollisionObject
-		print(collision_object)
+		if collision_object.get_collision_layer() & 4:
+			get_tree().change_scene("res://scenes/Main.tscn")

@@ -11,8 +11,8 @@ data = PoolVector3Array( 0, 0, 0, 0.2013, 0, -0.2013, 0, 0, -0.2013, 0.2013, 0, 
 mesh = ExtResource( 1 )
 material/0 = null
 
-[node name="StaticBody" type="StaticBody" parent="Fence"]
+[node name="FenceBody" type="StaticBody" parent="Fence"]
 collision_layer = 4
 
-[node name="CollisionShape" type="CollisionShape" parent="Fence/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Fence/FenceBody"]
 shape = SubResource( 1 )

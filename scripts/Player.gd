@@ -4,7 +4,7 @@ extends KinematicBody
 var move_speed : float = 10.0
 var side_speed : float = 6.0
 var velocity : Vector3 = Vector3()
-var jump_force : float = 40.0
+var jump_force : float = 20.0
 var gravity : float = 1.0
 
 # variables for animation
@@ -37,12 +37,12 @@ func _physics_process(delta):
 		sideways = -1
 	if Input.is_action_pressed("move_right"):
 		sideways = 1
-	if Input.is_action_just_pressed("jump"):
+	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y += jump_force
 	velocity.z = -move_speed
 	velocity.x = sideways * side_speed
 	velocity.y -= gravity
-	velocity = move_and_slide(velocity)
+	velocity = move_and_slide(velocity, Vector3.UP)
 	for index in range(get_slide_count()):
 		var collision = get_slide_collision(index)
 		var collision_object = collision.collider as CollisionObject

@@ -25,6 +25,19 @@ func _process(delta):
 	camera.translation.y = 0
 	camera.translation.x = player.translation.x / 2
 
+func _physics_process(delta):
+	if player.translation.z < -RoadBase.LENGTH:
+		player.translation.z += RoadBase.LENGTH
+		for child in get_children():
+			var road = child as RoadBase
+			if road:
+				road.translation.z += RoadBase.LENGTH
+				if road.translation.z > RoadBase.LENGTH:
+					road.queue_free()
+		var new_road = random_road()
+		new_road.translation.z = -initial_road_count * RoadBase.LENGTH
+		add_child(new_road)
+
 # chooses random road
 func random_road():
 	var road_scene = road_scenes[randi() % road_scenes.size()]

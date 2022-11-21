@@ -10,8 +10,10 @@ script = ExtResource( 5 )
 
 [node name="RoadStart" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 50 )
+script = null
 
 [node name="RoadStart2" parent="." instance=ExtResource( 1 )]
+script = null
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.622, 0 )

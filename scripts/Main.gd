@@ -17,6 +17,7 @@ func _ready():
 		var road = random_road()
 		road.translation.z = -(i+1) * 50.0
 		add_child(road)
+	get_tree().paused = true
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

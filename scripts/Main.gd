@@ -8,7 +8,7 @@ onready var camera = $CameraHinge
 var initial_road_count : int = 5
 var road_scenes = [
 	load("res://scenes/Road1.tscn"),
-	load("res://scenes/Road2.tscn"),
+	#load("res://scenes/Road2.tscn"),
 ]
 
 # Called when the node enters the scene tree for the first time.
@@ -44,3 +44,7 @@ func random_road():
 	var road_scene = road_scenes[randi() % road_scenes.size()]
 	var road = road_scene.instance()
 	return road
+
+
+func _on_StartScreen_dismissed():
+	get_tree().paused = false

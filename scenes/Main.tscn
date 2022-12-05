@@ -26,5 +26,8 @@ transform = Transform( 1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0
 far = 365.8
 
 [node name="Screen" type="CanvasLayer" parent="."]
+pause_mode = 2
 
 [node name="StartScreen" parent="Screen" instance=ExtResource( 3 )]
+
+[connection signal="dismissed" from="Screen/StartScreen" to="." method="_on_StartScreen_dismissed"]

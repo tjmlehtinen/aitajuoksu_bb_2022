@@ -19,6 +19,12 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.385, 0.5, 4.286 )
 
 [node name="Coin" parent="Grass/Sand/Obstacles" index="3" instance=ExtResource( 5 )]
 
+[node name="Coin2" parent="Grass/Sand/Obstacles" index="4" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.17265, 0, -6.43438 )
+
+[node name="Coin3" parent="Grass/Sand/Obstacles" index="5" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 11.4482 )
+
 [node name="Tree_1" type="MeshInstance" parent="Grass/Trees" index="0"]
 transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 8.35967, 0, 9.79716 )
 mesh = ExtResource( 3 )

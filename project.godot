@@ -24,6 +24,10 @@ config/name="Aitajuoksu"
 run/main_scene="res://scenes/Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+ScoreEvents="*res://scripts/ScoreEvents.gd"
+
 [input]
 
 move_left={
